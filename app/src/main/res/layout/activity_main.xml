@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <RadioGroup
@@ -11,27 +12,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
         <RadioButton
+            android:id="@+id/rg_dog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="강아지" />
+            android:text="복슬복슬 강아지"
+            tools:ignore="DuplicateIds" />
         <RadioButton
+            android:id="@+id/rg_cat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="고양이" />
+            android:text="귀여운 고양이" />
         <RadioButton
+            android:id="@+id/rg_hamster"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="강아지" />
+            android:text="말랑말랑 햄스터" />
         <RadioButton
+            android:id="@+id/rg_chick"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="고양이" />
+            android:text="삐약삐약 병아리" />
     </RadioGroup>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/rg1"
+        android:id="@+id/show"
         android:text="그림 보기"
         />
-</RelativeLayout>
+</LinearLayout>
 
